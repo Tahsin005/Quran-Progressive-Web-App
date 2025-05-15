@@ -45,9 +45,13 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-tr from-gray-50 to-gray-100 flex flex-col items-center px-4 py-8">
       <div className="w-full max-w-3xl">
-        <h1 className="text-4xl font-bold text-center text-green-700 mb-8">
+        <h1 className="text-4xl font-bold text-center text-green-700 mb-4">
           القرآن الكريم
         </h1>
+
+        <div className="mb-6 flex justify-center">
+          <InstallPrompt />
+        </div>
 
         {isOnline ? (
           <>
@@ -84,9 +88,6 @@ function App() {
                 )}
               </>
             )}
-            <div className="mt-8">
-              <InstallPrompt />
-            </div>
           </>
         ) : (
           <div className="bg-white border border-red-200 text-red-700 px-6 py-4 rounded-xl text-center shadow-sm">
