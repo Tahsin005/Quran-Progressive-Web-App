@@ -9,7 +9,7 @@ function SurahList({ surahs, onSelectSurah }) {
                     <li
                         key={surah.index}
                         className="p-5 bg-gradient-to-tr from-white to-gray-50 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer"
-                        onClick={() => onSelectSurah(idx + 1)}
+                        onClick={() => onSelectSurah(parseInt(surah.index))}
                     >
                         <div className="flex justify-between items-center mb-1">
                             <span className="text-xl font-semibold text-gray-800">
